@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Botonera de Jon Irenicus</title>
+  <style>
+    @font-face {
+      font-family: 'Diablo Heavy';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Diablo Heavy'), url('diablo.woff') format('woff');
+    }
+    header img{
+      max-width: 100%;
+    }
+    body{
+      font-family: 'Diablo Heavy', sans-serif;
+      letter-spacing: -1px;
+      margin: 0;
+      padding: 0;
+      color: white;
+      background-color: #333;
+    }
+    header{
+      text-align: center;
+      padding: 0 20px;
+    }
+    header h1{
+      font-size: 36px;
+      color: white;
+    }
+    section{
+      text-align: center;
+    }
+    footer{
+      font-family: sans-serif;
+      background: lightgray;
+      letter-spacing: normal;
+      font-size: 11px;
+      padding: 5px;
+    }
+    footer ul{
+      list-style-type: none;
+      padding-left: 0;
+    }
+    footer ul li {
+      display: inline-block;
+      color: #222
+    }
+    #main-cont{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 40px 20px;
+    }
+    @media screen and (max-width: 768px){
+      #main-cont{
+        justify-content: space-evenly;
+      }
+    }
+    .button-cont{
+      text-align: center;
+      display: inline-block;
+      max-width: 140px;
+    }
+    .button{
+      width: 140px;
+      height: 120px;
+      background-image: url(b01.png);
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      cursor:pointer;
+      filter:hue-rotate(290deg);
+    }
+    .button-cont:nth-child(even) .button{
+      filter:hue-rotate(220deg)
+    }
+    .button.active{
+      background-image: url(b02.png);
+    }
+
+    .button-cont p{
+      height: 40px;
+      font-size: 20px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Botonera de Jon Irenicus</h1>
+    <img src="mosaic.jpg" alt="Jon Irenicus Mosaic">
+  </header>
+  <div id="main-cont">
+    
+  </div>
+  <footer>
+    <section name="credits">
+      <ul>
+        <li><b>Developed by:</b> Alexis Roldán. www.alexisroldan.com</li>
+        <li><b>Audio Submitted by:</b> Submitted by Migrate Wizard on 2014-08-10 03:51.</li>
+        <li><b>Last modified:</b> 2015-01-22 08:52</li>
+        <li><b>Author:</b> Serenity Frost</li>
+        <li><b>Old Vault Category:</b> nwn2other</li>
+        <li><b>Old Vault ID:</b> 245</li>
+        <li><b>Game:</b> NwN2</li>
+        <li><b>Category:</b> Soundset</li>
+        <li><b>Requirements:</b> OC</li>
+        <li><b>Language:</b> English</li>
+      </ul>
+    </section>
+  </footer>
+  <script src="magic.js?v.1.0"></script>
+</body>
+</html>
