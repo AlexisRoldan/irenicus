@@ -1,2 +1,4 @@
 *.zip
+*.psd
 voicelines/*.wav
+voicelines/*.ssf
